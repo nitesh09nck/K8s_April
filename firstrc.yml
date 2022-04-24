@@ -2,18 +2,18 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-   name: onlineapp-rc
+   name: firstapp-rc
 spec:
    replicas: 3
    selector:
       app: firstapp
    template:
       metadata:
-        lables:
+        labels:
           app: firstapp
       spec:
         containers:
          - name: firstapp-container
-           image: nitesh09nck/javaapp:1
+           image: jenkins:2.60.3
            ports:
               - containerPort: 8080
