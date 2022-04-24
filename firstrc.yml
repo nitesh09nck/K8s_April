@@ -4,7 +4,7 @@ kind: ReplicationController
 metadata:
    name: firstapp-rc
 spec:
-   replicas: 3
+   replicas: 5
    selector:
       app: firstapp
    template:
